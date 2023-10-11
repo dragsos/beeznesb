@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 407325529}
   - component: {fileID: 407325528}
   - component: {fileID: 407325527}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable (velocity tracking)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -835,7 +835,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407325526}
   serializedVersion: 2
-  m_Mass: 0.5
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 648546604}
   - component: {fileID: 648546603}
   - component: {fileID: 648546602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: XR Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2022,7 +2022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 648546607}
-  m_MoveSpeed: 3
+  m_MoveSpeed: 1
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -3095,7 +3095,7 @@ GameObject:
   - component: {fileID: 993283669}
   - component: {fileID: 993283668}
   - component: {fileID: 993283667}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable (kinematic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3199,7 +3199,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -3245,7 +3245,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993283666}
   serializedVersion: 2
-  m_Mass: 0.75
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -4217,7 +4217,7 @@ GameObject:
   - component: {fileID: 1369106624}
   - component: {fileID: 1369106623}
   - component: {fileID: 1369106622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grab Interactable (instantenous)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
