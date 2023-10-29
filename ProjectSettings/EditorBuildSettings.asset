@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Greybox.unity
     guid: 4c53d03a9cb9e3842a8f6fb0fcebf98b
+  - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 4a3ff0c8ddc6f054d94bcaf2131995f5
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 27dd6118e82996b49a061e630523a776, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 543c3ed2f21fe1f419a733edf415cf95, type: 2}
