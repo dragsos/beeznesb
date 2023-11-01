@@ -9,7 +9,7 @@ public class MenuManagement : MonoBehaviour
     public GameObject optionMenu;
     public GameObject pauseMenu;
 
-    //public AudioSource ClickSound;
+    public AudioSource ClickSound;
 
     void Start()
     {
@@ -21,28 +21,28 @@ public class MenuManagement : MonoBehaviour
     public void StartButton() //Start the game
     {
         Debug.Log("LETS GO");
-        //ClickSound.Play();
+        ClickSound.Play();
         SceneManager.LoadScene("Greybox");
     }
 
     public void OptionButton() //Show Options Menu in the main menu
     {
         optionMenu.SetActive(true);
-        //ClickSound.Play();
+        ClickSound.Play();
     }
 
     public void CreditsButton() //Play credits
     {
         Debug.Log("Aaaaaand, Roll credits");
-        //ClickSound.Play();
+        ClickSound.Play();
         //SceneManager.LoadScene("");
     }
 
     public void QuitButton() //Quit the game
     {
         Debug.Log("What? Not person enough? Pathetic");
-        //ClickSound.Play();
-        //Application.Quit();
+        ClickSound.Play();
+        Application.Quit();
     }
     #endregion
 
@@ -54,22 +54,21 @@ public class MenuManagement : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Main Menu" && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Thingy");
-            //optionMenu.SetActive(true);
-            // TODO Pause game and make menu apear
+            optionMenu.SetActive(true);
         }
     }
 
     public void ControlesButton() //Show the game controles
     {
         Debug.Log("You use a controle obviously");
-        //ClickSound.Play();
+        ClickSound.Play();
         // TODO Make picture appear
     }
 
     public void CloseButton() //Hide Options Menu in the main menu
     {
         optionMenu.SetActive(false);
-        //ClickSound.Play();
+        ClickSound.Play();
     }
 
     #endregion

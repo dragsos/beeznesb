@@ -280,19 +280,19 @@ namespace UnityEngine.XR.Content.Interaction
             if (m_ComfortMode != null)
                 m_ComfortMode.SetActive(m_EnableComfortMode);
 
-            m_DynamicMoveProvider.useGravity = m_UseGravity;
+            //m_DynamicMoveProvider.useGravity = m_UseGravity;
             m_TwoHandedGrabMoveProvider.useGravity = m_UseGravity;
             m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.useGravity = m_UseGravity;
             m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.useGravity = m_UseGravity;
             if (m_UseGravity)
             {
-                m_DynamicMoveProvider.gravityApplicationMode = k_DefaultGravityApplicationMode;
+                //m_DynamicMoveProvider.gravityApplicationMode = k_DefaultGravityApplicationMode;
                 m_TwoHandedGrabMoveProvider.gravityMode = k_DefaultGravityMode;
                 m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.gravityMode = k_DefaultGravityMode;
                 m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.gravityMode = k_DefaultGravityMode;
             }
 
-            m_DynamicMoveProvider.enableFly = m_EnableFly;
+            //m_DynamicMoveProvider.enableFly = m_EnableFly;
             m_TwoHandedGrabMoveProvider.enableFreeYMovement = m_EnableFly;
             m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.enableFreeYMovement = m_EnableFly;
             m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.enableFreeYMovement = m_EnableFly;
