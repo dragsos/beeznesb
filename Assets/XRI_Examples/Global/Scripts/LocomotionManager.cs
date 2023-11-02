@@ -281,37 +281,37 @@ namespace UnityEngine.XR.Content.Interaction
                 m_ComfortMode.SetActive(m_EnableComfortMode);
 
             //m_DynamicMoveProvider.useGravity = m_UseGravity;
-            m_TwoHandedGrabMoveProvider.useGravity = m_UseGravity;
-            m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.useGravity = m_UseGravity;
-            m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.useGravity = m_UseGravity;
-            if (m_UseGravity)
-            {
-                //m_DynamicMoveProvider.gravityApplicationMode = k_DefaultGravityApplicationMode;
-                m_TwoHandedGrabMoveProvider.gravityMode = k_DefaultGravityMode;
-                m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.gravityMode = k_DefaultGravityMode;
-                m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.gravityMode = k_DefaultGravityMode;
-            }
+            //m_TwoHandedGrabMoveProvider.useGravity = m_UseGravity;
+            //m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.useGravity = m_UseGravity;
+            //m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.useGravity = m_UseGravity;
+            //if (m_UseGravity)
+            //{
+            //    //m_DynamicMoveProvider.gravityApplicationMode = k_DefaultGravityApplicationMode;
+            //    m_TwoHandedGrabMoveProvider.gravityMode = k_DefaultGravityMode;
+            //    m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.gravityMode = k_DefaultGravityMode;
+            //    m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.gravityMode = k_DefaultGravityMode;
+            //}
 
             //m_DynamicMoveProvider.enableFly = m_EnableFly;
-            m_TwoHandedGrabMoveProvider.enableFreeYMovement = m_EnableFly;
-            m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.enableFreeYMovement = m_EnableFly;
-            m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.enableFreeYMovement = m_EnableFly;
+            //    m_TwoHandedGrabMoveProvider.enableFreeYMovement = m_EnableFly;
+            //    m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.enableFreeYMovement = m_EnableFly;
+            //    m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.enableFreeYMovement = m_EnableFly;
 
-            m_TwoHandedGrabMoveProvider.enabled = m_EnableGrabMovement;
-            m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.enabled = m_EnableGrabMovement;
-            m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.enabled = m_EnableGrabMovement;
-        }
+            //    m_TwoHandedGrabMoveProvider.enabled = m_EnableGrabMovement;
+            //    m_TwoHandedGrabMoveProvider.leftGrabMoveProvider.enabled = m_EnableGrabMovement;
+            //    m_TwoHandedGrabMoveProvider.rightGrabMoveProvider.enabled = m_EnableGrabMovement;
+            }
 
-        void SetMoveScheme(LocomotionType scheme, bool leftHand)
-        {
-            var targetHand = leftHand ? m_LeftHandManager : m_RightHandManager;
-            targetHand.smoothMotionEnabled = (scheme == LocomotionType.MoveAndStrafe);
-        }
+            void SetMoveScheme(LocomotionType scheme, bool leftHand)
+            {
+                var targetHand = leftHand ? m_LeftHandManager : m_RightHandManager;
+                targetHand.smoothMotionEnabled = (scheme == LocomotionType.MoveAndStrafe);
+            }
 
-        void SetTurnStyle(TurnStyle style, bool leftHand)
-        {
-            var targetHand = leftHand ? m_LeftHandManager : m_RightHandManager;
-            targetHand.smoothTurnEnabled = (style == TurnStyle.Smooth);
+            void SetTurnStyle(TurnStyle style, bool leftHand)
+            {
+                var targetHand = leftHand ? m_LeftHandManager : m_RightHandManager;
+                targetHand.smoothTurnEnabled = (style == TurnStyle.Smooth);
+            }
         }
     }
-}

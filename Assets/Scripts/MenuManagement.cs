@@ -1,21 +1,38 @@
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 
 public class MenuManagement : MonoBehaviour
 {
+    public UnityAction OnPause;
+
     public GameObject optionMenu;
     public GameObject pauseMenu;
 
     public AudioSource ClickSound;
 
+    [SerializeField] private InputActionReference triggerAction;
+
     void Start()
     {
         pauseMenu.SetActive(false); //Start game without pause menu visible
         optionMenu.SetActive(false); //Start game without options menu visible
+        triggerAction.action.Enable();
+        triggerAction.action.performed += OnTriggerButtonPress;
     }
+
+    private void OnDestroy()
+    {
+        triggerAction.action.Disable();
+        triggerAction.action.performed -= OnTriggerButtonPress;
+    }
+
 
     #region Main Game Menu Buttons
     public void StartButton() //Start the game
@@ -74,22 +91,19 @@ public class MenuManagement : MonoBehaviour
     #endregion
 
     #region Pause Buttons
-    public void OpenPauseMenu() //Open the pause menu
+    public void OnTriggerButtonPress(InputAction.CallbackContext context) //Open the pause menu
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Thingy");
-            //pauseMenu.SetActive(true);
-            // TODO Pause game and make menu apear
-        }
+        Debug.Log("Opens Thingy");
+        //Time.timeScale = 0.0f; //If this the player can not look around
+        pauseMenu.SetActive(true);
     }
 
-    public void BackButton() //Hide Pause Menu and go back to the game
-    {
-        //pauseMenu.SetActive(false);
-        //ClickSound.Play();
-        // TODO Unpause game
-    }
+    void BackButton() //Hide Pause Menu and go back to the game
+        {
+            //pauseMenu.SetActive(false);
+            //ClickSound.Play();
+            // TODO Unpause game
+        }
     #endregion
 
 }
