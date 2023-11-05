@@ -8,6 +8,8 @@ TagManager:
   - Flame
   - Water
   - Destroyer
+  - Lever
+  - Manager
   layers:
   - Default
   - TransparentFX
