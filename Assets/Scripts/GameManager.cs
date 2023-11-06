@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
-{
-
+{ 
     public OpenLid openLidScript;
 
     // Start is called before the first frame update
