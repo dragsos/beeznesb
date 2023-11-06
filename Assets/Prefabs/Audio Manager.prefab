@@ -87,3 +87,213 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: Voiceline1
+    clip: {fileID: 8300000, guid: a008538ae92b0ad439440025c0e01baa, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline2
+    clip: {fileID: 8300000, guid: 118fff2543505ce47b18fff758df553f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline3
+    clip: {fileID: 8300000, guid: 85dc6b9d8b9c2f443b679f7a9f550bd0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline4
+    clip: {fileID: 8300000, guid: 7f63f07b8c0424b4aacdc80d81835053, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline5
+    clip: {fileID: 8300000, guid: 5447595864d1d624fa82096fcdffdb28, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline6
+    clip: {fileID: 8300000, guid: afe7451599173f241b56515f1a74ea39, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline7
+    clip: {fileID: 8300000, guid: d10810ba5f4a7664fa391d1c61fa1a1e, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline8
+    clip: {fileID: 8300000, guid: 479af798f91b4384d9117e06d8e50946, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline9
+    clip: {fileID: 8300000, guid: 3045d0a5326912b4596c190bd1b988bb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline10
+    clip: {fileID: 8300000, guid: 0dde2bc5a291b8a439d5846420956fd4, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline11
+    clip: {fileID: 8300000, guid: 941b2ba6ea38a2d439605ccee27bbbaf, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline12
+    clip: {fileID: 8300000, guid: 1d7b421c92e479f4d84b957f2a723fdb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline13
+    clip: {fileID: 8300000, guid: 37c11dbd81bf2bd479e38b62abade5d0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline14
+    clip: {fileID: 8300000, guid: 0982bea348ed72243aee8623baf0185f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline15
+    clip: {fileID: 8300000, guid: c30c3a538c78a3a4680597f4e9cea21f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline16
+    clip: {fileID: 8300000, guid: affb49fd9bf99ac47a25988c05283a96, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline17
+    clip: {fileID: 8300000, guid: feb0dcda64f7fde45924c16f577e5d3c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline18
+    clip: {fileID: 8300000, guid: ef078a64593c97d48add5b467beb8a13, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline19
+    clip: {fileID: 8300000, guid: f259d008d3b9f104d9566a34141b5eeb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline20
+    clip: {fileID: 8300000, guid: 4bbb321919372804780dc95b7f316313, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline21
+    clip: {fileID: 8300000, guid: caa9b7a2b50a7f64684380aff06dcbe2, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline22
+    clip: {fileID: 8300000, guid: 0c980322e68d9664396810d12be7af95, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline23
+    clip: {fileID: 8300000, guid: 809a464fff8e6d44e94344fb45c56f2d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline24
+    clip: {fileID: 8300000, guid: 4d9b245504ad0b548a88a145c7cfecde, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline25
+    clip: {fileID: 8300000, guid: 0362ad9815cf50e4aad7cce09b0159e0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline26
+    clip: {fileID: 8300000, guid: d6e8207fd64f240438f82ea57dbb424a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline27
+    clip: {fileID: 8300000, guid: a39df7bbbf811e8478ede2b0c9634b6e, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline28
+    clip: {fileID: 8300000, guid: 034876ccf122b994fb8895a8cab8c6f1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline29
+    clip: {fileID: 8300000, guid: 7c5379a6a8595a045aea610d21f67621, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Voiceline30
+    clip: {fileID: 8300000, guid: 2bf2b5cf7ad749e48ac0a1dcb1c97d1b, type: 3}
+    volume: 1
+    volumeVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
