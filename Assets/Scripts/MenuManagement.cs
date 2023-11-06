@@ -54,6 +54,7 @@ public class MenuManagement : MonoBehaviour
     {
         Debug.Log("Aaaaaand, Roll credits");
         ClickSound.Play();
+        optionMenu.SetActive(false);
         creditMenu.SetActive(true);
     }
 
