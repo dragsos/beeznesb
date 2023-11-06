@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Audio/BreakLock.wav.meta
 guid: f5dcedbcebe8eae4fbf02de43b40a141
+========
+guid: d5fce5ee59ba4e349b8c9195b627d1bf
+>>>>>>>> Add-Credits:Assets/Audio/MainMenu Ambiance.mp3.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6

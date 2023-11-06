@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Audio/ConnectingParts_Sound.wav.meta
 guid: c94049adc4d5ad84ab3dfcbb78129807
+========
+guid: a0f0d76c6d6ffa548999035867fdd41e
+>>>>>>>> Add-Credits:Assets/Audio/PressingMenuButtonSound.wav.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
