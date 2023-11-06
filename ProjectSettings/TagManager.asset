@@ -10,6 +10,11 @@ TagManager:
   - Destroyer
   - Lever
   - Harpoon
+  - Crowbar
+  - Lock
+  - GunBodyPart
+  - GunBarrelPart
+  - GunCanisterPart
   layers:
   - Default
   - TransparentFX
@@ -19,7 +24,7 @@ TagManager:
   - UI
   - Player
   - Interactable
-  - 
+  - Gun parts
   - 
   - 
   - 

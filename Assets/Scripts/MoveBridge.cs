@@ -9,6 +9,8 @@ public class MoveBridge : MonoBehaviour
     public Vector3 finalPosition;
     public LeverBehavior lever;
 
+    public bool bridgeCleared = false;
+
     void Start()
     {
         finalPosition = transform.position + Vector3.up * distanceToMove;
@@ -19,6 +21,10 @@ public class MoveBridge : MonoBehaviour
         if (lever.isOn)
         {
             transform.position = Vector3.MoveTowards(transform.position, finalPosition, speed * Time.deltaTime);
+            if (transform.position == finalPosition)
+            {
+                bridgeCleared = true;
+            }
         }
     }
 }
