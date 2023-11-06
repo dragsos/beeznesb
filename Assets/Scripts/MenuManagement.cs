@@ -11,6 +11,7 @@ using System;
 public class MenuManagement : MonoBehaviour
 {
     public GameObject optionMenu;
+    public GameObject mainMenu;
     public GameObject pauseMenu;
     public GameObject creditMenu;
     public GameObject controlesPicture;
@@ -55,6 +56,7 @@ public class MenuManagement : MonoBehaviour
         Debug.Log("Aaaaaand, Roll credits");
         ClickSound.Play();
         optionMenu.SetActive(false);
+        mainMenu.SetActive(false);
         creditMenu.SetActive(true);
     }
 
@@ -72,6 +74,7 @@ public class MenuManagement : MonoBehaviour
     {
         Debug.Log("Aaaaaand, back");
         ClickSound.Play();
+        mainMenu.SetActive(true);
         creditMenu.SetActive(false);
     }
 
@@ -89,13 +92,15 @@ public class MenuManagement : MonoBehaviour
         Debug.Log("You use a controle obviously");
         ClickSound.Play();
         controlesPicture.SetActive(true);
+        mainMenu.SetActive(false);
     }
 
     public void HideControlesButton() //hide the game controles
     {
         Debug.Log("You don't use a controle obviously");
         ClickSound.Play();
-        controlesPicture.SetActive(false);
+        controlesPicture.SetActive(false); 
+        mainMenu.SetActive(true);
     }
 
     public void HideOptionsButton() //Hide Options Menu in the main menu
