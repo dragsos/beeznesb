@@ -10,10 +10,10 @@ using System;
 
 public class MenuManagement : MonoBehaviour
 {
-    public UnityAction OnPause;
-
     public GameObject optionMenu;
     public GameObject pauseMenu;
+    public GameObject creditMenu;
+    public GameObject controlesPicture;
 
     public AudioSource ClickSound;
 
@@ -23,6 +23,9 @@ public class MenuManagement : MonoBehaviour
     {
         pauseMenu.SetActive(false); //Start game without pause menu visible
         optionMenu.SetActive(false); //Start game without options menu visible
+        creditMenu.SetActive(false); //Start game without credit menu visible
+        controlesPicture.SetActive(false); //Start game without picture of the controles visible
+
         triggerAction.action.Enable();
         triggerAction.action.performed += OnTriggerButtonPress;
     }
@@ -33,8 +36,7 @@ public class MenuManagement : MonoBehaviour
         triggerAction.action.performed -= OnTriggerButtonPress;
     }
 
-
-    #region Main Game Menu Buttons
+    #region Menu Buttons
     public void StartButton() //Start the game
     {
         Debug.Log("LETS GO");
@@ -44,15 +46,15 @@ public class MenuManagement : MonoBehaviour
 
     public void OptionButton() //Show Options Menu in the main menu
     {
-        optionMenu.SetActive(true);
         ClickSound.Play();
+        optionMenu.SetActive(true);        
     }
 
     public void CreditsButton() //Play credits
     {
         Debug.Log("Aaaaaand, Roll credits");
         ClickSound.Play();
-        //SceneManager.LoadScene("");
+        creditMenu.SetActive(true);
     }
 
     public void QuitButton() //Quit the game
@@ -63,34 +65,47 @@ public class MenuManagement : MonoBehaviour
     }
     #endregion
 
-    #region Main Game Options Buttons
+    #region Credit Buttons
 
+    public void HideCreditsButton() //Get rid of credits
+    {
+        Debug.Log("Aaaaaand, back");
+        ClickSound.Play();
+        creditMenu.SetActive(false);
+    }
+
+    #endregion
+
+    #region Options Buttons
     public void OpenOptionMenu() //Open the pause menu
     {
-
-        if (SceneManager.GetActiveScene().name == "Main Menu" && Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Thingy");
+            Debug.Log("Choices");
             optionMenu.SetActive(true);
-        }
     }
 
     public void ControlesButton() //Show the game controles
     {
         Debug.Log("You use a controle obviously");
         ClickSound.Play();
-        // TODO Make picture appear
+        controlesPicture.SetActive(true);
     }
 
-    public void CloseButton() //Hide Options Menu in the main menu
+    public void HideControlesButton() //hide the game controles
     {
-        optionMenu.SetActive(false);
+        Debug.Log("You don't use a controle obviously");
         ClickSound.Play();
+        controlesPicture.SetActive(false);
     }
 
+    public void HideOptionsButton() //Hide Options Menu in the main menu
+    {
+        ClickSound.Play();
+        optionMenu.SetActive(false);
+        controlesPicture.SetActive(false);
+    }
     #endregion
 
-    #region Pause Buttons
+    #region Main Game Pause Buttons
     public void OnTriggerButtonPress(InputAction.CallbackContext context) //Open the pause menu
     {
         Debug.Log("Opens Thingy");
@@ -99,11 +114,10 @@ public class MenuManagement : MonoBehaviour
     }
 
     void BackButton() //Hide Pause Menu and go back to the game
-        {
-            //pauseMenu.SetActive(false);
-            //ClickSound.Play();
-            // TODO Unpause game
-        }
+    {
+        ClickSound.Play();
+        pauseMenu.SetActive(false);
+    }
     #endregion
 
 }
