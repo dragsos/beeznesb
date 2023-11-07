@@ -9,6 +9,7 @@ public class LeverFix : MonoBehaviour
     {
         if (other.CompareTag("Lever"))
         {
+            FindObjectOfType<AudioManager>().Play("ConnectingParts");
             Destroy(other.gameObject);
             if (lever != null)
             {

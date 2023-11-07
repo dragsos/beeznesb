@@ -10,6 +10,7 @@ public class BreakLock : MonoBehaviour
     {
         if (other.CompareTag("Crowbar"))
         {
+            FindObjectOfType<AudioManager>().Play("BreakingLock");
             crateOpen = true;
             Debug.Log("Crate is open");
         }
