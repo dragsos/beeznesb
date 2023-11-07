@@ -41,7 +41,7 @@ public class MenuManagement : MonoBehaviour
     {
         Debug.Log("LETS GO");
         ClickSound.Play();
-        SceneManager.LoadScene("Greybox");
+        SceneManager.LoadScene("Main_Scene - Copy");
     }
 
     public void OptionButton() //Show Options Menu in the main menu
