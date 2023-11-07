@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BlueprintBehavior : MonoBehaviour
 {
+    public GameManager gameManagerScript;
+
     public OpenLid openLidScript;
     public PlaceGunBody placeGunBodyScript;
     public PlaceGunBarrel placeGunBarrelScript;
@@ -18,6 +20,8 @@ public class BlueprintBehavior : MonoBehaviour
     {
         if (placeGunBodyScript.gunBodyInPlace && placeGunBarrelScript.gunBarrelInPlace && placeGunCanisterScript.gunCanisterInPlace)
         {
+            FindObjectOfType<AudioManager>().Play("Voice_Line28");
+            gameManagerScript.gunCleared = true;
             Destroy(gunBody);
             Destroy(gunBarrel);
             Destroy(gunCanister);

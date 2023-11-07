@@ -11,6 +11,7 @@ public class PlaceGunBarrel : MonoBehaviour
     {
         if (other.CompareTag("GunBarrelPart"))
         {
+            FindObjectOfType<AudioManager>().Play("ConnectingParts");
             Destroy(other.gameObject);
             if (fixedGunBarrel != null)
             {

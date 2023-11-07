@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LadderBehavior : MonoBehaviour
 {
+    public GameManager gameManagerScript;
+
     public Transform targetPosition;
     public float moveSpeed = 1f;
     public float maxRotation = 0f;
@@ -40,6 +42,12 @@ public class LadderBehavior : MonoBehaviour
 
             // Smoothly rotate the ladder to the desired rotation
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 180f, targetRotation), rotationSpeed * Time.deltaTime);
+
+            if (transform.rotation.z == targetRotation)
+            {
+                FindObjectOfType<AudioManager>().Play("Voice_Line30");
+                gameManagerScript.finalLadderCleared = true;
+            }
         }
     }
 

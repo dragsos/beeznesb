@@ -9,7 +9,7 @@ public class MoveBridge : MonoBehaviour
     public Vector3 finalPosition;
     public LeverBehavior lever;
 
-    public bool bridgeCleared = false;
+    public GameManager gameManagerScript;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class MoveBridge : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, finalPosition, speed * Time.deltaTime);
             if (transform.position == finalPosition)
             {
-                bridgeCleared = true;
+                gameManagerScript.bridgeCleared = true;
             }
         }
     }

@@ -11,6 +11,7 @@ public class PlaceGunBody : MonoBehaviour
     {
         if (other.CompareTag("GunBodyPart"))
         {
+            FindObjectOfType<AudioManager>().Play("ConnectingParts");
             Destroy(other.gameObject);
             if (fixedGunBody != null)
             {
